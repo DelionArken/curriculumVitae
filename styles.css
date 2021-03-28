@@ -9,6 +9,11 @@ body
     font-family: 'Open Sans', var(--bs-font-sans-serif);
 }
 
+h3
+{
+    font-variant: small-caps;
+}
+
 div.container-fluid
 {
     min-height: 100vh;
@@ -84,6 +89,17 @@ ul.timeline > li > div
     position: absolute;
     right: 100%;
     text-align: end;
+}
+
+ul.timeline > li > span
+{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+ul.timeline > li > p
+{
+    margin-top: 0.6rem;
 }
 
 .svg-logo
@@ -331,4 +347,19 @@ hr::before
     right: -5px;
     z-index: 1;
     transform: rotate(35deg)
+}
+ 
+.carousel-control-prev, .carousel-control-next
+{
+    border: none;
+    opacity: 0.2;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus
+{
+    border: none;
+    opacity: 0.3;
 }
