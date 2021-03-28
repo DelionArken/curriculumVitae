@@ -1,0 +1,334 @@
+:root
+{
+    --bs-secondary: #0087ff;
+    --primary-shadow: #0564b0;
+}
+
+body
+{
+    font-family: 'Open Sans', var(--bs-font-sans-serif);
+}
+
+div.container-fluid
+{
+    min-height: 100vh;
+}
+
+.nav-link
+{
+    color: var(--bs-light);
+}
+
+.nav-pills .nav-link
+{
+    border-radius: 0;
+    padding: .5rem 2rem !important; 
+    min-width: max-content;
+}
+
+.nav-pills .nav-link:hover
+{
+    background-color: var(--bs-secondary);
+    box-shadow: 3px 3px 5px var(--primary-shadow);
+}
+
+.nav-pills .nav-link.active
+{
+    background-color: var(--bs-secondary);
+    box-shadow: 3px 3px 5px var(--primary-shadow);
+}
+
+.text-small-caps
+{
+    font-variant: small-caps;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    min-width: 30rem;
+    margin-left: 5rem;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid var(--bs-primary);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+ul.timeline > li > div
+{
+    position: absolute;
+    right: 100%;
+    text-align: end;
+}
+
+.svg-logo
+{
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+}
+
+.progress{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    border: 2px solid #ebebeb;
+    font-size: 16px;
+    line-height: 85px;
+    text-align: center;
+    position: absolute;
+    top: 7.5%;
+    left: 7.5%;
+}
+.progress.blue .progress-bar{
+    border-color: #ed687c;
+}
+.progress.blue .progress-value{
+    color: #ed687c;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 0.36s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #049dff;
+}
+.progress.yellow .progress-value{
+    color: #049dff;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1.62s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #fdba04;
+}
+.progress.pink .progress-value{
+    color: #fdba04;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 1.26s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+.progress.green .progress-value{
+    color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-5 1.5s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(162deg);
+        transform: rotate(162deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+.card-title 
+{
+    margin-bottom: 1rem;;
+}
+
+.profile-holder
+{
+    padding: 0.5rem;
+    margin: 3rem;
+    border: 4px solid #d4d9df;
+    border-radius: 50%;
+}
+
+.profile-image
+{
+    border: 0px;
+    border-radius: 50%;
+    max-width: -moz-available;
+}
+
+hr::before
+{
+    content: ' ';
+    border: 3px solid grey;
+    display: inline-block;
+    background-color: whitesmoke;
+    position: relative;
+    transform: rotate(45deg);
+    left: 50%;
+    bottom:  0.7rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    z-index: 400;
+}
+
+.progress-line-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px
+}
+
+.progress-line {
+    height: 10px;
+    background: #333;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible
+}
+
+.progress-line .progress-line-bar {
+    position: relative;
+    height: 75%;
+}
+
+.progress-line .progress-line-value {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    top: -30px;
+    right: -25px
+}
+
+.progress-line .progress-line-bar:after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    background:#dadada;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -5px;
+    z-index: 1;
+    transform: rotate(35deg)
+}
