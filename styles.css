@@ -383,3 +383,8 @@ ul.contact > li
     background-color: whitesmoke;
     font-weight: bold;
 }
+
+.decoration-icon
+{
+    max-width: 30%;
+}
