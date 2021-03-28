@@ -286,7 +286,12 @@ ul.timeline > li > p
 {
     border: 0px;
     border-radius: 50%;
-    max-width: -moz-available;
+    max-width: 100%;
+}
+
+hr
+{
+    overflow: visible;
 }
 
 hr::before
@@ -298,10 +303,9 @@ hr::before
     position: relative;
     transform: rotate(45deg);
     left: calc(50% - 0.4rem);
-    bottom:  0.7rem;
+    bottom:  calc(0.7rem);
     width: 0.8rem;
     height: 0.8rem;
-    z-index: 400;
 }
 
 .progress-line-title {
